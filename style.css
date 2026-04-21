@@ -1,0 +1,65 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --navy: #002147;
+    --gold: #D4AF37;
+    --cream: #fdfdfd;
+    --text: #333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f4f4f4; color: var(--text); line-height: 1.6; }
+
+/* Navigation */
+.main-nav { background: var(--navy); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); }
+.nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.logo { display: flex; align-items: center; gap: 15px; }
+.logo-icon { font-size: 2.5rem; }
+.logo-text h1 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--gold); line-height: 1; }
+.logo-text p { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+.nav-links a:hover { color: var(--gold); }
+
+/* Hero Section */
+.hero-rk { 
+    height: 70vh; 
+    background: linear-gradient(rgba(0,33,71,0.7), rgba(0,33,71,0.7)), url('images/rayagada_school.jpg');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero-rk h2 { font-family: 'Cinzel', serif; font-size: 3.5rem; margin-bottom: 10px; }
+
+/* Academic Cards */
+.section-container { max-width: 1200px; margin: -50px auto 50px; padding: 0 20px; }
+.academic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.academic-card { 
+    background: white; padding: 40px; border-radius: 0; border-top: 5px solid var(--gold); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); text-align: center;
+}
+.academic-card h3 { color: var(--navy); margin-bottom: 15px; font-family: 'Cinzel', serif; }
+
+/* Disclosure Table Style */
+.disclosure-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+.disclosure-table th { background: var(--navy); color: var(--gold); padding: 15px; text-align: left; border: 1px solid #ddd; }
+.disclosure-table td { padding: 12px; border: 1px solid #ddd; font-size: 0.9rem; }
+
+/* Footer */
+.site-footer { background: var(--navy); color: white; padding: 40px 20px 20px; margin-top: 50px; border-top: 5px solid var(--gold); }
+.footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; }
+:root {
+    --navy: #002147;
+    --gold: #D4AF37;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section, .section-container {
+    padding: 60px 0;
+}
