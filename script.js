@@ -1,13 +1,14 @@
 const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
-        <a href="index.html" class="logo">BRIGHT<span>FUTURE</span></a>
+        <a href="index.html" class="logo">
+          <a href="index.html" class="logo">BRIGHT<span>FUTURE PUBLIC SCHOOL</span></a></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
                        <li><a href="about.html">About</a></li>
  <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="mandatory.html">Disclosure</a></li>
+            <li><a href="mandatory.html">Mandatory Disclosure</a></li>
             <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -18,13 +19,16 @@ const footerHTML = `
 <footer>
     <div class="footer-container">
         <div>
-            <h3>BRIGHT FUTURE</h3>
+            <a href="index.html" class="logo">
+
+            <h3>BRIGHT FUTURE PUBLIC SCHOOL</h3>
             <p style="margin-top:15px; opacity:0.7;">Empowering minds since 1998 with colorful innovation.</p>
+            </a>
         </div>
         <div class="footer-section">
             <h5>Quick Links</h5>
             <ul class="footer-links">
-                <li><a href="mandatory.html">CBSE Disclosure</a></li>
+                <li><a href="mandatory.html">Mandatory Disclosure</a></li>
                 <li><a href="admission.html">Admissions</a></li>
             </ul>
         </div>
