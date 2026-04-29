@@ -2,12 +2,14 @@ const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="logo">
+         <img src="logo.png" alt="School Logo" class="school-logo">
+                <div class="logo-text">
           <a href="index.html" class="logo">BRIGHT<span>FUTURE PUBLIC SCHOOL</span></a></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
-                       <li><a href="about.html">About</a></li>
- <li><a href="gallery.html">Gallery</a></li>
+             <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
             <li><a href="mandatory.html">Mandatory Disclosure</a></li>
             <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -28,8 +30,13 @@ const footerHTML = `
         <div class="footer-section">
             <h5>Quick Links</h5>
             <ul class="footer-links">
-                <li><a href="mandatory.html">Mandatory Disclosure</a></li>
-                <li><a href="admission.html">Admissions</a></li>
+               <li><a href="index.html">Home</a></li>
+            <li><a href="admission.html">Admission</a></li>
+             <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="mandatory.html">Mandatory Disclosure</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-section">
