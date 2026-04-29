@@ -2,41 +2,37 @@ const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="logo">
-         <img src="logo.png" alt="School Logo" class="school-logo">
-                <div class="logo-text">
-          <a href="index.html" class="logo">BRIGHT<span>FUTURE PUBLIC SCHOOL</span></a></a>
+            <img src="images/logo.png" alt="School Logo" class="logo-img">
+            BRIGHT<span>FUTURE</span>
+        </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
-             <li><a href="about.html">About</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="mandatory.html">Mandatory Disclosure</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="mandatory.html">Disclosure</a></li>
             <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>`;
-
 const footerHTML = `
 <footer>
     <div class="footer-container">
         <div>
-            <a href="index.html" class="logo">
-
-            <h3>BRIGHT FUTURE PUBLIC SCHOOL</h3>
-            <p style="margin-top:15px; opacity:0.7;">Empowering minds since 1998 with colorful innovation.</p>
-            </a>
+            <h3 class="footer-logo">
+                <img src="images/logo.png" alt="School Logo" class="footer-logo-img">
+                BRIGHT FUTURE
+            </h3>
+            <p style="margin-top:15px; opacity:0.7;">
+                Empowering minds since 1998 with colorful innovation.
+            </p>
         </div>
         <div class="footer-section">
             <h5>Quick Links</h5>
             <ul class="footer-links">
-               <li><a href="index.html">Home</a></li>
-            <li><a href="admission.html">Admission</a></li>
-             <li><a href="about.html">About</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="mandatory.html">Mandatory Disclosure</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                <li><a href="mandatory.html">CBSE Disclosure</a></li>
+                <li><a href="admission.html">Admissions</a></li>
             </ul>
         </div>
         <div class="footer-section">
@@ -46,7 +42,6 @@ const footerHTML = `
         </div>
     </div>
 </footer>`;
-
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header-placeholder");
     const footer = document.getElementById("footer-placeholder");
