@@ -3,8 +3,9 @@ const headerHTML = `
     <div class="nav-container">
         <a href="index.html" class="logo">
             <img src="gallery 2/infra-Copy.avif" alt="School Logo" class="logo-img">
-            BRIGHT<span>FUTURE</span>
+            <span class="school-name">BRIGHT<span class="highlight">FUTURE</span></span>
         </a>
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
@@ -16,6 +17,7 @@ const headerHTML = `
         </ul>
     </div>
 </nav>`;
+
 const footerHTML = `
 <footer>
     <div class="footer-container">
@@ -24,10 +26,11 @@ const footerHTML = `
                 <img src="images/logo.png" alt="School Logo" class="footer-logo-img">
                 BRIGHT FUTURE
             </h3>
-            <p style="margin-top:15px; opacity:0.7;">
+            <p class="footer-text">
                 Empowering minds since 1998 with colorful innovation.
             </p>
         </div>
+
         <div class="footer-section">
             <h5>Quick Links</h5>
             <ul class="footer-links">
@@ -35,41 +38,19 @@ const footerHTML = `
                 <li><a href="admission.html">Admissions</a></li>
             </ul>
         </div>
+
         <div class="footer-section">
             <h5>Connect</h5>
-            <p style="color:#94a3b8;">+91 7735135408</p>
-            <p style="color:#94a3b8;">fbright395@gmail.com</p>
+            <p>+91 7735135408</p>
+            <p>fbright395@gmail.com</p>
         </div>
     </div>
 </footer>`;
+
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header-placeholder");
     const footer = document.getElementById("footer-placeholder");
 
     if (header) header.innerHTML = headerHTML;
     if (footer) footer.innerHTML = footerHTML;
-});
-document.addEventListener("DOMContentLoaded", () => {
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const galleryItems = document.querySelectorAll(".gallery-item");
-
-    filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove("active"));
-            button.classList.add("active");
-
-            const filterValue = button.getAttribute("data-filter");
-
-            galleryItems.forEach(item => {
-                if (filterValue === "all" || item.classList.contains(filterValue)) {
-                    item.style.display = "block";
-                    item.classList.add("show");
-                } else {
-                    item.style.display = "none";
-                    item.classList.remove("show");
-                }
-            });
-        });
-    });
 });
