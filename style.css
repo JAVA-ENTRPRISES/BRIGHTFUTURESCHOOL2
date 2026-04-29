@@ -12,29 +12,6 @@
 body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-main); overflow-x: hidden; }
 
 .container { width: 90%; max-width: var(--container-max); margin: 0 auto; }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
-
-.logo-img {
-    height: 40px;
-    width: auto;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-logo-img {
-    height: 35px;
-    width: auto;
-}
-
 /* --- HEADER (VISIBLE & COLORFUL) --- */
 .navbar {
     height: 90px;
