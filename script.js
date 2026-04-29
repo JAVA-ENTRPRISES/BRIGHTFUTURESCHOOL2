@@ -2,8 +2,8 @@ const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="logo">
-            <img src="gallery 2/infra-Copy.avif" alt="School Logo" class="logo-img">
-            <span class="school-name">BRIGHT<span class="highlight">FUTURE</span></span>
+            <img src="gallery 2/infra-Copy.avif" alt="" class="logo-img">
+            <span class="school-name">BRIGHT<span class="highlight">FUTURE SCHOOL</span></span>
         </a>
 
         <ul class="nav-links">
@@ -11,7 +11,7 @@ const headerHTML = `
             <li><a href="admission.html">Admission</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="mandatory.html">Disclosure</a></li>
+            <li><a href="mandatory.html">Mandatory Disclosure</a></li>
             <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -34,8 +34,13 @@ const footerHTML = `
         <div class="footer-section">
             <h5>Quick Links</h5>
             <ul class="footer-links">
-                <li><a href="mandatory.html">CBSE Disclosure</a></li>
-                <li><a href="admission.html">Admissions</a></li>
+              <li><a href="index.html">Home</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="mandatory.html">MandatoryDisclosure</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
