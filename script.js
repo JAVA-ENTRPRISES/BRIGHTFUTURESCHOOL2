@@ -2,7 +2,7 @@ const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="School Logo" class="logo-img">
+            <img src="gallery 2/infra-Copy.avif" alt="School Logo" class="logo-img">
             BRIGHT<span>FUTURE</span>
         </a>
         <ul class="nav-links">
