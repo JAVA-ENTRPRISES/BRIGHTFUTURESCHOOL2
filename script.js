@@ -2,7 +2,7 @@ const headerHTML = `
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="logo">
-            <img src="gallery 2/infra-Copy.avif" alt="" class="logo-img">
+            <img src="gallery 2/logo.jpeg" alt="" class="logo-img">
             <span class="school-name">BRIGHT<span class="highlight">FUTURE SCHOOL</span></span>
         </a>
 
@@ -10,9 +10,10 @@ const headerHTML = `
             <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
             <li><a href="about.html">About</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="mandatory.html">Mandatory Disclosure</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
@@ -37,9 +38,9 @@ const footerHTML = `
               <li><a href="index.html">Home</a></li>
             <li><a href="admission.html">Admission</a></li>
             <li><a href="about.html">About</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="mandatory.html">MandatoryDisclosure</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
             <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -58,4 +59,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (header) header.innerHTML = headerHTML;
     if (footer) footer.innerHTML = footerHTML;
+});
+// Gallery Filter
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        galleryItems.forEach(item => {
+            if (filter === "all" || item.classList.contains(filter)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
 });
